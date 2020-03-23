@@ -1,1 +1,29 @@
+# reading in an excel.csv file and applying a variable
+name <- read.csv("name.csv")     # saving the data in the variable 'name'
 
+library(ggplot2)  # loading the ggplot2 package
+library(repr)     # loading the repr package
+
+# Change plot size for all following plots 
+options(repr.plot.width=4, repr.plot.height=4, repr.plot.res = 120)
+
+# separate two variables with by function in r using summary
+by(Marks$Mark, Marks$Course, summary) # produces Physics and Maths (two variables) scores in summary
+
+# get help in Jupyter Notebook
+?function()
+
+# example ggplot
+ggplot(larvae, aes(x = Insecticide, y = NumberLarvae)) + geom_point()
+
+# split a two vector data frame with two variables to parse one x variable's y values
+variable.name <- filname$ycolname[filename$xcolname == "x variable name"]
+
+# find max Z score using scale function
+max(scale(variable.name containing y values))
+
+# calc correlation coefficient example
+cor(x= larvae$Insecticide , y= larvae$NumberLarvae)
+
+# scatterplot using ggplot
+ggplot(galaxy_new, aes(x = Distance, y = Velocity)) + geom_point()
