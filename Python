@@ -1,2 +1,29 @@
 # alternative round function
-print("the ..... ..... is ${0:0.2f}".format(variablename))
+print("the ..... ..... is ${0:0.2f}".format(variablename)) 
+# the $ sign puts a $ in front of value 
+# first zero is the index position, 0.2 is saying round to 2 decimal places 
+
+# new line using \n
+s = "hello \n how \n are \n you"
+print(s)
+hello 
+ how 
+ are 
+ you
+# can use """ triple quotations marks """ to auto fill \n after you have pressed enter where you want it in string
+
+###### Extracting data from a file e.g. Excel.csv and parsing into into another file
+filename = "names.csv" #creates object
+
+fread = open(filename, "r") # creates object to open and read .csv file
+fwrite = open("login.csv", "w") # creates new file to store cleaned data
+
+for name in fread: # parsing the data from the excel file and parsing it into new file
+    flname = name.split(",")
+    fname = flname[0]
+    lname = flname[1]
+    uname = fname[0] + "." + lname
+    fwrite.write(uname)
+fread.close()
+fwrite.close()
+#######
