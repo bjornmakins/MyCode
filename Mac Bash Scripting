@@ -1,0 +1,14 @@
+#download file and name it, saves to cd
+curl -o examplefilename.txt (or .csv or whatever) <url>
+
+# count how many unique words in a txt file
+cat file.txt | tr " " "\n" | sort | uniq -c | wc -l
+
+#copy a line in bash by cutting line and then pasting it
+ctrl+ u then followed by ctrl + y
+
+# store variable example
+file1=$(cat cits4407.txt | tr " " "\n" | sort | uniq -u)
+
+#print out variable
+echo "$variablename"
