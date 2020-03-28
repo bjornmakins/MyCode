@@ -15,3 +15,6 @@ echo "$variablename"
 
 # Cheat sheet for vi
 http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdfhttp://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
+
+# quit command
+ctrl + c
