@@ -12,3 +12,6 @@ file1=$(cat cits4407.txt | tr " " "\n" | sort | uniq -u)
 
 #print out variable
 echo "$variablename"
+
+# Cheat sheet for vi
+http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdfhttp://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
