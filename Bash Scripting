@@ -21,3 +21,5 @@ ctrl + c
 
 #suppress headers
 file | sed 1d
+
+cat file | cut -c1-8
