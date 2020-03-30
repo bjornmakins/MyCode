@@ -50,3 +50,8 @@ ngo <- cbind(usa, de) # example of binding two separate vector list into a 5x2 (
 ngo <- t(ngo) # transposing a matrix from hor to vert and vice versa
 ind <- c(2,2.2,2.4,2.5,2.6) 
 ngo <- rbind (ngo, ind) # adding in a third vector "ind" to an existing matrix "ngo" as an extra column
+
+$ creating a matrix example
+chess.mat <- matrix(chess, nrow =10, dimnames = list(NULL, c("player", "piece"))) #NULL means to to assign rows any specific labels and nrow=10 means r will infer 2 columns
+#byrow= FALSE is the default setting
+
