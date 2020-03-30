@@ -27,3 +27,26 @@ cor(x= larvae$Insecticide , y= larvae$NumberLarvae)
 
 # scatterplot using ggplot
 ggplot(galaxy_new, aes(x = Distance, y = Velocity)) + geom_point()
+
+# see all variables in environment
+ls()
+
+#vectors and slicing:
+variable[variable > 2000] # all values in variable greater than 2000
+variable[-c(2,4,6,8)] # all values within atk except positions 2,4,6,8
+variable[-(4:7)] # all values except positions 4 to 7
+names(n.variable) <- variable #apply numbers to to names from within a variable
+
+atk[seq(1, 9, 2)] # the sequence function creates a sequence of numbers 
+                  # starting with the first element you define, and ending with the second, 
+                  # with a step of whatever you pass as a third value 
+                  # the corresponding argument names are intuitive: from = , to = , by = 
+
+# vector to a matrix and changing dimensions of an object
+dim(a) <- c(3,4) # changes 1-D vector a into a 3xrow, 4xcolum object
+
+# working with matrices
+ngo <- cbind(usa, de) # example of binding two separate vector list into a 5x2 (row,col) matrix
+ngo <- t(ngo) # transposing a matrix from hor to vert and vice versa
+ind <- c(2,2.2,2.4,2.5,2.6) 
+ngo <- rbind (ngo, ind) # adding in a third vector "ind" to an existing matrix "ngo" as an extra column
