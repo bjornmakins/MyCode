@@ -23,3 +23,5 @@ ctrl + c
 file | sed 1d
 
 cat file | cut -c1-8
+
+# delete words on command line
