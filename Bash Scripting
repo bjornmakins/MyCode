@@ -25,3 +25,9 @@ file | sed 1d
 cat file | cut -c1-8
 
 # delete words on command line
+ctrl + w
+
+# read and increment number within a file
+oldnum=$((grep find the number))
+newnum=$((oldnum+1))
+echo $newnum
