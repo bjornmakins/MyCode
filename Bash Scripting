@@ -31,3 +31,6 @@ ctrl + w
 oldnum=$((grep find the number))
 newnum=$((oldnum+1))
 echo $newnum
+
+# remove environment variable
+unset variablename
