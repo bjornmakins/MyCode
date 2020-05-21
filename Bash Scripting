@@ -34,3 +34,13 @@ echo $newnum
 
 # remove environment variable
 unset variablename
+
+# overwrite exisiting file
+set -o noclobber
+echo "some text" >| existing_file
+
+# list your top ten favorite commands
+history | awk '{print $2}' | sort | uniq -c | sort -rn | head
+
+# delete last line
+try sed '$d"
