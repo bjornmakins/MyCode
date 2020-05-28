@@ -44,3 +44,6 @@ history | awk '{print $2}' | sort | uniq -c | sort -rn | head
 
 # delete last line
 try sed '$d"
+
+# sort by column
+sort -u -t, -k5 filename
