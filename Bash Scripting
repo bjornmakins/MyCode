@@ -47,3 +47,5 @@ try sed '$d"
 
 # sort by column
 sort -u -t, -k5 filename
+
+mv RecordingDates.txt /users/jordanmakins/Desktop/NG/NGP/test/
