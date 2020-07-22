@@ -50,3 +50,6 @@ sort -u -t, -k5 filename
 
 # move file to a new directory
 mv RecordingDates.txt /users/jordanmakins/Desktop/NG/NGP/test/
+
+# copy files from one directory to another using regex (*.csv)
+cp /users/jordanmakins/Desktop/NG/NGP/overall\ recordings *.csv /users/jordanmakins/Desktop/NG/NGP/test/
